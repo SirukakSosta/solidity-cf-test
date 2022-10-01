@@ -1,7 +1,8 @@
 pragma solidity ^0.8.13;
+import "./dirOne/test1.sol";
 
 interface IERC20 {
-    function transfer(address, uint) external returns (bool);
+            function transfer(address, uint) external returns (bool);
 
     function transferFrom(
         address,
@@ -9,7 +10,7 @@ interface IERC20 {
         uint
     ) external returns (bool);
 }
-
+/** Εδώ πρέπει να κάνεις */
 contract CrowdFund {
     event Launch(
         uint id,
